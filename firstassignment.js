@@ -32,35 +32,36 @@
 
 // // // Task 3: Area of cylinder using object
 
-const cylinder = {
-    radius: 5,
-    height: 4,
+// const cylinder = {
+//     radius: 5,
+//     height: 4,
 
-    area: function() {
-        return Math.PI * this.radius * this.radius * this.height;
-    }
-};
+//     area: function() {
+//         return Math.PI * this.radius * this.radius * this.height;
+//     }
+// };
 
-console.log("Cylinder result:", cylinder.area());
+// console.log("Cylinder result:", cylinder.area());
 
 
 // // // Task 4: Area of square and rectangle using common function
 
-// // function calculateArea() {
-// //     return this.length * this.breadth;
-// // }
+function calculateArea() {
+    return this.length * this.breadth;
+}
 
-// // const square = {
-// //     length: 5,
-// //     breadth: 5,
-// //     area: calculateArea
-// // };
+const square = {
+    length: 5,
+    breadth: 5,
+    area: calculateArea
+};
 
-// // const rectangle = {
-// //     length: 8,
-// //     breadth: 4,
-// //     area: calculateArea
-// // };
+const rectangle = {
+    length: 8,
+    breadth: 4,
+    area: calculateArea
+};
 
-// // console.log("Area of Square:", square.area());
-// // console.log("Area of Rectangle:", rectangle.area());
+console.log("Area of Square:", square.area());
+console.log("Area of Rectangle:", rectangle.area());
+
